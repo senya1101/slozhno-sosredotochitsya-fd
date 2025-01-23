@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "prettier": "^3.4.2",
+    "stylelint": "^16.13.2"
+  },
+  "scripts": {
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "fix": "prettier --write './**/*.{html,css,js}'",
+    "lint": "styleint '**/*.css'",
+    "lintfix": "styleint '**/*.css' --fix"
+  }
+
+}

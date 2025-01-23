@@ -1,5 +1,126 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  padding: var(--page-padding-mobile, 10px);
+  background-color: var(--bg-color);
+  font-family: var(--main-font), sans-serif;
+  background-image: url(../images/cover-image-dark.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--main-font-color);
+  font-size: 1.125rem;
+}
+
+.header {
+  position: relative;
+  min-block-size: min-content;
+  block-size: calc(100dvh - 20px);
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  block-size: 25px;
+  inline-size: 25px;
+  border-inline-end: 1px var(--accent-color) solid;
+  border-block-start: 1px var(--accent-color) solid;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  block-size: 25px;
+  inline-size: 25px;
+  border-block-end: 1px var(--accent-color) solid;
+  border-inline-start: 1px var(--accent-color) solid;
+}
+
+.header__theme-menu {
+  grid-column: -1;
+}
+
+.header__title {
+  grid-column: 1/-1;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: var(
+    --title-font-size-mobile,
+    clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
+  );
+}
+
+.header__text {
+  grid-column: 1/-1;
+}
+
+.header__text-paragraph {
+
+}
+
+.content__section-title {
+  color: var(--accent-color);
+  margin-block-end: 20px;
+  font-size: 1.125rem;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  font-weight: bold;
+}
+
+.content {
+  margin-block: 40px;
+  /* background-color: var(--bg-color); */
+}
+
+.content__section:not(:last-child) {
+  margin-block-end: 50px;
+}
+
+
+.content__section-list-item:not(:last-child) {
+  margin-block-end: 20px;
+}
+
+.content__section-list-item-title {
+  margin-block-end: 10px;
+  font-size: 1.125rem;
+}
+
+.no-bold-font {
+  font-weight: normal;
+}
+
+.content__images-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  block-size: calc(100dvh - 20px);
+  align-items: center;
+}
+
+.footer__title {
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: var(
+    --title-font-size-mobile,
+    clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
+  );
+  text-align: center;
 }

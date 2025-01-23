@@ -1,14 +1,37 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+@media (prefers-color-scheme: dark) {
+  .theme-auto .header__decorative-inscription {
+  }
+}
 
 :root.theme-dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-color: #000028;
+  --bg-image: "../images/cover-image-dark.png";
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --main-font-color: #f1b2ce;
+}
+
+.theme-dark .header__decorative-inscription {
+  position: absolute;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 23.4px;
+  right: 0;
+}
+
+.theme-dark .header__decorative-inscription::after {
+  content: "";
+  position: absolute;
+  background-color: var(--accent-color);
+  block-size: 9px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow:;
 }
 
 .theme-dark .page {
