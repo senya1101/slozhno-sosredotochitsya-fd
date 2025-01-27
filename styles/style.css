@@ -178,7 +178,7 @@
   outline: 1px var(--main-font-color) solid;
 }
 
-.content__section-text:not(:last-child){
+.content__section-text:not(:last-child) {
   margin-block-end: 10px;
 }
 
