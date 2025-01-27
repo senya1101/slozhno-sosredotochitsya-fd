@@ -9,8 +9,7 @@
 
 @media (prefers-color-scheme: light) {
 
-  :root.theme-auto {
-
+  :root {
     --bg-color: #000028;
     --bg-image: url(../images/cover-image-light.png);
     --accent-color: #ff8dcb;
@@ -19,7 +18,7 @@
     --hover-border-color: rgba(50 49 45/ 0.4);
   }
 
-  .theme-auto .header__decorative-inscription {
+  .header__decorative-inscription {
     display: none;
   }
 }
