@@ -1,5 +1,5 @@
 .page {
-  background-color: var(--main-color, #000028);
+  background-color: var(--bg-color, #000028);
   font-family: var(--main-font, "IBM Plex mono"), sans-serif;
   background-image: var(--bg-image, url(../images/cover-image-dark.png));
   background-attachment: fixed;
@@ -125,7 +125,7 @@
 
 .title-decor {
   background-color: var(--accent-color, rgb(255 0 112));
-  color: var(--main-color, #000028);
+  color: var(--title-decor-color, #000028);
 }
 
 .content {
@@ -136,7 +136,7 @@
 }
 
 .content__section-title {
-  color: var(--accent-color, rgb(255 0 112));
+  color: var(--content__section-title-color, rgb(255 0 112));
   margin-block-end: 20px;
   font-size: var(--main-font-size, 1.125rem);
 }

@@ -1,5 +1,7 @@
 :root.theme-light {
   --bg-color: #FFF1F7;
+  --title-decor-color: #353430;
+  --content__section-title-color: #353430;
   --bg-image: url(../images/cover-image-light.png);
   --accent-color: #ff8dcb;
   --title-color: #ffc2e6;
@@ -12,6 +14,8 @@
   :root {
     --bg-color: #FFF1F7;
     --bg-image: url(../images/cover-image-light.png);
+    --title-decor-color: #353430;
+    --content__section-title-color: #353430;
     --accent-color: #ff8dcb;
     --title-color: #ffc2e6;
     --main-font-color: #353430;

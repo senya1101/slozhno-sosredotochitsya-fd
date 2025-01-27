@@ -1,5 +1,7 @@
 :root.theme-dark {
-  --main-color: #000028;
+  --bg-color: #000028;
+  --title-decor-color: #000028;
+  --content__section-title-color: rgb(255 0 112);
   --bg-image: url(../images/cover-image-dark.png);
   --accent-color: rgb(255 0 112);
   --title-color: #db00ff;
