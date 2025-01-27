@@ -13,13 +13,15 @@
   --main-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
   --accent-color: rgb(255 0 112);
-  --hover-border-color: rgb(255 0 112 / 0.4) --title-color: #db00ff;
+  --hover-border-color: rgb(255 0 112 / 0.4);
+  --title-color: #db00ff;
   --main-font-color: #f1b2ce;
   --main-font-size: 1.125rem;
   --main-line-height: 23.4px;
 }
 
 @media (min-width: 768px) {
+
   :root {
     --page-padding: 20px;
     --content-margin-block: 60px;

@@ -83,7 +83,7 @@
 }
 
 .header__title {
-  color: var(--title-color);
+  color: var(--title-color, #db00ff);
   text-shadow: 4px 4px 0 var(--accent-color, rgb(255 0 112));
   font-size: var(
     --title-font-size,
