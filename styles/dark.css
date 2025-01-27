@@ -1,13 +1,13 @@
 @media (prefers-color-scheme: dark) {
-  
+
   .theme-auto .header__decorative-inscription {
     position: absolute;
     color: var(--accent-color);
     text-transform: uppercase;
     font-size: 18px;
     line-height: 23.4px;
-    right: 28px;
-    top: 1px;
+    right: calc(28px + var(--page-padding));
+    top: calc(1px + var(--page-padding));
   }
 
   .theme-auto .header__decorative-inscription::after {
@@ -21,15 +21,6 @@
     border-radius: 50%;
     box-shadow: 0px 0px 4px 2px var(--accent-color);
   }
-}
-
-:root.theme-dark {
-  --bg-color: #000028;
-  --bg-image: url(../images/cover-image-dark.png);
-  --accent-color: rgb(255 0 112);
-  --title-color: #db00ff;
-  --main-font-color: #f1b2ce;
-  --hover-border-color: rgb(255 0 112 / 0.4);
 }
 
 .theme-dark .header__decorative-inscription {
@@ -53,6 +44,16 @@
   border-radius: 50%;
   box-shadow: 0px 0px 4px 2px var(--accent-color);
 }
+
+:root.theme-dark {
+  --bg-color: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
+  --accent-color: rgb(255 0 112);
+  --title-color: #db00ff;
+  --main-font-color: #f1b2ce;
+  --hover-border-color: rgb(255 0 112 / 0.4);
+}
+
 
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */

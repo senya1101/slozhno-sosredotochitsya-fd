@@ -34,6 +34,8 @@
   border-inline-start: 1px var(--accent-color) solid;
 }
 
+
+
 .header {
   padding: var(--page-padding);
   position: relative;
@@ -42,6 +44,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
 }
+
 
 .header__theme-menu {
   align-self: center;
