@@ -7,6 +7,8 @@
   --title-color: #ffc2e6;
   --main-font-color: #353430;
   --hover-border-color: rgba(50 49 45/ 0.4);
+  --button-color: #353430;
+  --decor-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -19,7 +21,10 @@
     --accent-color: #ff8dcb;
     --title-color: #ffc2e6;
     --main-font-color: #353430;
+    --decor-color: #353430;
     --hover-border-color: rgba(50 49 45/ 0.4);
+    --button-color: #353430;
+
   }
 
   .header__decorative-inscription {

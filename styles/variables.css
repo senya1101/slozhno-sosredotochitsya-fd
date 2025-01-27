@@ -18,6 +18,9 @@
   --hover-border-color: rgb(255 0 112 / 0.4);
   --title-color: #db00ff;
   --main-font-color: #f1b2ce;
+  --decor-color: rgb(255 0 112);
+  --button-color: rgb(255 0 112);
+
 }
 
 @media (min-width: 768px) {
