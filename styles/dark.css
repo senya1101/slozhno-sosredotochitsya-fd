@@ -1,6 +1,7 @@
 @media (prefers-color-scheme: dark) {
 
   .theme-auto .header__decorative-inscription {
+    display: block;
     position: absolute;
     color: var(--accent-color);
     text-transform: uppercase;
@@ -24,6 +25,7 @@
 }
 
 .theme-dark .header__decorative-inscription {
+  display: block;
   position: absolute;
   color: var(--accent-color);
   text-transform: uppercase;

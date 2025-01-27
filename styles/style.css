@@ -6,10 +6,12 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: var(--main-font-color);
   font-size: 1.125rem;
 }
 
+.header__decorative-inscription {
+  display: none;
+}
 
 .decorated-zone::before {
   content: "";
@@ -109,6 +111,7 @@
 }
 
 .content {
+  color: var(--main-font-color);
   padding: 0 var(--page-padding);
   margin-block: var(--content-margin-block);
   line-height: 23.4px;
@@ -214,8 +217,8 @@
     gap: 20px;
   }
 
-  .content__section-title:not(.title-decor) {
-    width: 236px;
+  .content__section-title {
+    max-width: 236px;
   }
 
   .content__images-wrapper {
@@ -262,11 +265,11 @@
     flex-direction: row;
   }
 
-  .content__section-title:not(.title-decor) {
-    width: 315px;
+  .content__section-title {
+    max-width: 315px;
   }
 
-  .content__section:nth-child(2) .content__section-list{
+  .content__section:nth-child(2) .content__section-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
