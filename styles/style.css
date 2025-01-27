@@ -249,7 +249,7 @@
 }
 
 @media (min-width: 1024px) {
-  
+
   .header__theme-menu {
     align-self: start;
     justify-self: center;
@@ -266,7 +266,7 @@
 
   .content__section:nth-child(even) .content__section-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
   }
 
