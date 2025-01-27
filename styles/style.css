@@ -109,7 +109,7 @@
 }
 
 .content {
-  color: var(--main-color);
+  color: var(--main-font-color);
   padding: 0 var(--page-padding);
   margin-block: var(--content-margin-block);
   line-height: var(--main-line-height, 23.4px);

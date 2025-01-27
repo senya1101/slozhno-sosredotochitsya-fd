@@ -9,6 +9,7 @@
 
 @media (prefers-color-scheme: light) {
   :root.theme-auto {
+    
     --bg-color: #000028;
     --bg-image: url(../images/cover-image-light.png);
     --accent-color: #ff8dcb;
