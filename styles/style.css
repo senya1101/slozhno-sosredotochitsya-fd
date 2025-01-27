@@ -9,7 +9,6 @@
   font-size: var(--main-font-size, 1.125rem);
 }
 
-
 .header__decorative-inscription {
   display: none;
   position: absolute;
@@ -21,7 +20,7 @@
   top: calc(1px + var(--page-padding, 10px));
 }
 
- .header__decorative-inscription::after {
+.header__decorative-inscription::after {
   content: "";
   position: absolute;
   right: -19px;
@@ -217,7 +216,6 @@
 }
 
 @media (min-width: 768px) {
-
   .header {
     padding-left: 0;
   }
@@ -269,7 +267,6 @@
 }
 
 @media (min-width: 1024px) {
-
   .header__theme-menu {
     align-self: start;
     justify-self: center;
@@ -289,5 +286,4 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
   }
-
 }

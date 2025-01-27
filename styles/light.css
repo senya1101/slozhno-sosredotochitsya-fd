@@ -1,5 +1,5 @@
 :root.theme-light {
-  --bg-color: #FFF1F7;
+  --bg-color: #fff1f7;
   --title-decor-color: #353430;
   --content__section-title-color: #353430;
   --bg-image: url(../images/cover-image-light.png);
@@ -10,9 +10,9 @@
 }
 
 @media (prefers-color-scheme: light) {
-
+  
   :root {
-    --bg-color: #FFF1F7;
+    --bg-color: #fff1f7;
     --bg-image: url(../images/cover-image-light.png);
     --title-decor-color: #353430;
     --content__section-title-color: #353430;
@@ -26,7 +26,6 @@
     display: none;
   }
 }
-
 
 .theme-light .header__decorative-inscription {
   display: none;

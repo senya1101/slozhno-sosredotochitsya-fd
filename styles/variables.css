@@ -9,16 +9,15 @@
   --content__section-margin: 50px;
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --title-line-height: clamp(5.98125rem, 5.7844rem + 0.8397vw, 6.1875rem);
+  --main-font-size: 1.125rem;
+  --main-line-height: 23.4px;
   --main-font: "IBM Plex mono";
-  --main-color: #000028;
   --content__section-title-color: rgb(255 0 112);
   --bg-image: url(../images/cover-image-dark.png);
   --accent-color: rgb(255 0 112);
   --hover-border-color: rgb(255 0 112 / 0.4);
   --title-color: #db00ff;
   --main-font-color: #f1b2ce;
-  --main-font-size: 1.125rem;
-  --main-line-height: 23.4px;
 }
 
 @media (min-width: 768px) {

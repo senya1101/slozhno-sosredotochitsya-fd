@@ -10,7 +10,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-
+  
   .header__decorative-inscription {
     display: block;
   }
@@ -19,6 +19,3 @@
 .theme-dark .header__decorative-inscription {
   display: block;
 }
-
-
-
