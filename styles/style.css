@@ -1,5 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   background-color: var(--bg-color);
   font-family: var(--main-font), sans-serif;
@@ -38,7 +36,7 @@
   padding: var(--page-padding);
   position: relative;
   min-block-size: min-content;
-  block-size: 100dvh;
+  block-size: 100vh;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
 }
@@ -88,19 +86,21 @@
     --title-font-size,
     clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
   );
-  line-height: clamp(5.98125rem, 4.7595rem + 5.2126vw, 8.095625rem);
+  line-height: var(--title-line-height);
 }
 
 .header__text {
   align-self: center;
 }
 
+.header__text-paragraph {
+  font-weight: bold;
+}
 
 
 .title-decor {
   background-color: var(--accent-color);
   color: var(--bg-color);
-  font-weight: bold;
 }
 
 .content {
@@ -193,21 +193,18 @@
     padding-left: 0;
   }
 
-  .header__theme-menu {
-  }
-
   .header__text {
     width: calc((100% - var(--page-padding)) / 2);
     justify-self: end;
   }
 
-  .content__section:not(:nth-child(2)) {
+  .content__section:nth-child(odd) {
     display: grid;
     grid-template-columns: min-content 1fr;
     gap: 20px;
   }
 
-  .content__section-title {
+  .content__section-title:not(.title-decor) {
     width: 236px;
   }
 
@@ -245,7 +242,17 @@
 
 @media (min-width: 1024px) {
 
-  .content__section-title {
+  .header__theme-menu {
+    align-self: start;
+    justify-self: center;
+    padding-left: var(--page-padding);
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .content__section-title:not(.title-decor) {
     width: 315px;
   }
 

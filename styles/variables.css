@@ -8,6 +8,7 @@
   --content-margin-block: 40px;
   --content__section-margin: 50px;
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-line-height: clamp(5.98125rem, 5.7844rem + 0.8397vw, 6.1875rem);
   --main-font: "IBM Plex mono";
   --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
@@ -23,6 +24,7 @@
     --content-margin-block: 60px;
     --content__section-margin: 80px;
     --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --title-line-height: clamp(6.1875rem, 0.4631rem + 11.9258vw, 8.095625rem);;
 
   }
 }
