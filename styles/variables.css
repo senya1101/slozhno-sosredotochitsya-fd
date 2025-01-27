@@ -4,9 +4,25 @@
 */
 
 :root {
-  --page-padding-mobile: 10px;
-  --page-padding-dekstop: 20px;
-  --title-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --title-font-size-dekstop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --page-padding: 10px;
+  --content-margin-block: 40px;
+  --content__section-margin: 50px;
+  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --main-font: "IBM Plex mono";
+  --bg-color: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
+  --accent-color: rgb(255 0 112);
+  --hover-border-color: rgb(255 0 112 / 0.4) --title-color: #db00ff;
+  --main-font-color: #f1b2ce;
+}
+
+@media (min-width: 768px) {
+
+  :root {
+    --page-padding: 20px;
+    --content-margin-block: 60px;
+    --content__section-margin: 80px;
+    --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+
+  }
 }

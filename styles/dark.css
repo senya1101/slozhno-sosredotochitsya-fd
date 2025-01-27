@@ -1,18 +1,34 @@
 @media (prefers-color-scheme: dark) {
   .theme-auto .header__decorative-inscription {
+    position: absolute;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 23.4px;
+    right: 28px;
+    top: 1px;
+  }
+
+  .theme-auto .header__decorative-inscription::after {
+    content: "";
+    position: absolute;
+    right: -19px;
+    top: 7px;
+    background-color: var(--accent-color);
+    block-size: 9px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 2px var(--accent-color);
   }
 }
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
   --bg-color: #000028;
-  --bg-image: "../images/cover-image-dark.png";
-  --accent-color: #ff0070;
+  --bg-image: url(../images/cover-image-dark.png);
+  --accent-color: rgb(255 0 112);
   --title-color: #db00ff;
   --main-font-color: #f1b2ce;
+  --hover-border-color: rgb(255 0 112 / 0.4);
 }
 
 .theme-dark .header__decorative-inscription {
@@ -21,17 +37,20 @@
   text-transform: uppercase;
   font-size: 18px;
   line-height: 23.4px;
-  right: 0;
+  right: calc(28px + var(--page-padding));
+  top: calc(1px + var(--page-padding));
 }
 
 .theme-dark .header__decorative-inscription::after {
   content: "";
   position: absolute;
+  right: -19px;
+  top: 7px;
   background-color: var(--accent-color);
   block-size: 9px;
   aspect-ratio: 1;
   border-radius: 50%;
-  box-shadow:;
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
 }
 
 .theme-dark .page {
