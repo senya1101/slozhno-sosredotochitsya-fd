@@ -9,8 +9,28 @@
   font-size: var(--main-font-size, 1.125rem);
 }
 
+
 .header__decorative-inscription {
   display: none;
+  position: absolute;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 23.4px;
+  right: calc(28px + var(--page-padding, 10px));
+  top: calc(1px + var(--page-padding, 10px));
+}
+
+ .header__decorative-inscription::after {
+  content: "";
+  position: absolute;
+  right: -19px;
+  top: 7px;
+  background-color: var(--accent-color, rgb(255 0 112));
+  block-size: 9px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--accent-color, rgb(255 0 112));
 }
 
 .decorated-zone::before {

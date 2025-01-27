@@ -8,7 +8,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  
+
   :root.theme-auto {
 
     --bg-color: #000028;
@@ -22,59 +22,8 @@
   .theme-auto .header__decorative-inscription {
     display: none;
   }
-
-  .theme-auto .header__theme-menu-button {
-    color: var(--main-font-color, #353430);
-  }
-
-  .theme-auto .header__theme-menu-button_active {
-    border: 1px var(--main-font-color, #353430) solid;
-  }
-
-  .theme-auto .header__theme-menu-button:hover {
-    border: 1px var(--main-font-color, #353430) solid;
-  }
-
-  .theme-auto .decorated-zone::before {
-    border-inline-end: 1px var(--main-font-color, #353430) solid;
-    border-block-start: 1px var(--main-font-color, #353430) solid;
-  }
-
-  .theme-auto .decorated-zone::after {
-    border-block-end: 1px var(--main-font-color, #353430) solid;
-    border-inline-start: 1px var(--main-font-color, #353430) solid;
-  }
-
-  .theme-auto .content__section-title {
-    color: var(--main-font-color, #353430);
-  }
 }
 
-.theme-light .decorated-zone::before {
-  border-inline-end: 1px var(--main-font-color, #353430) solid;
-  border-block-start: 1px var(--main-font-color, #353430) solid;
-}
-
-.theme-light .decorated-zone::after {
-  border-block-end: 1px var(--main-font-color, #353430) solid;
-  border-inline-start: 1px var(--main-font-color, #353430) solid;
-}
-
-.theme-light .header__theme-menu-button {
-  color: var(--main-font-color, #353430);
-}
-
-.theme-light .header__theme-menu-button_active {
-  border: 1px var(--main-font-color, #353430) solid;
-}
-
-.theme-light .header__theme-menu-button:hover {
-  border: 1px var(--main-font-color, #353430) solid;
-}
-
-.theme-light .content__section-title {
-  color: var(--main-font-color, #353430);
-}
 
 .theme-light .header__decorative-inscription {
   display: none;
