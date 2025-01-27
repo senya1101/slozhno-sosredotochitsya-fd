@@ -8,6 +8,12 @@
     "fix": "prettier --write './**/*.{html,css,js}'",
     "lint": "styleint '**/*.css'",
     "lintfix": "styleint '**/*.css' --fix"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "del": "^6.0.0",
+    "gulp": "^5.0.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-plumber": "^1.2.1"
   }
-
 }
