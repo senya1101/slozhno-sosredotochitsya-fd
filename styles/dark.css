@@ -1,5 +1,4 @@
 @media (prefers-color-scheme: dark) {
-
   .theme-auto .header__decorative-inscription {
     display: block;
     position: absolute;
@@ -48,11 +47,10 @@
 }
 
 :root.theme-dark {
-  --bg-color: #000028;
+  --main-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
   --accent-color: rgb(255 0 112);
   --title-color: #db00ff;
   --main-font-color: #f1b2ce;
   --hover-border-color: rgb(255 0 112 / 0.4);
 }
-
